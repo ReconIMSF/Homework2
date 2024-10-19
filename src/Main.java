@@ -60,16 +60,25 @@ public class Main {
         var weight1 = 78.2;
         var weight2 = 82.7;
         var totalWeight = weight1 + weight2;
-        System.out.printf("Задача 6");
-        System.out.printf(" ");
+        System.out.println("Задача 6");
         System.out.println("total weight is "+totalWeight);
         var weightDiff = weight2 - weight1;
         System.out.println("weight difference is "+weightDiff);
 
         //Задание 7
         var divRem = weight2 % weight1;
-        System.out.printf("Задача 7");
-        System.out.printf(" ");
+        System.out.println("Задача 7");
         System.out.println("divRem ="+divRem);
+
+        //Задание 8
+        var worktime = 640;
+        var timePerDay = 8;
+        var workers = worktime / timePerDay;
+        var workersAdd = workers + 94;
+        var timePerDayNew = worktime / workersAdd;
+        System.out.println("Задача 8");
+        System.out.println(String.format("Всего работников в компании - %d человек", workers));
+        System.out.println(String.format("Если в компании работает %d человека, то всего %d часов работы может быть поделено между сотрудниками", workersAdd, timePerDayNew));
+
     }
 }
